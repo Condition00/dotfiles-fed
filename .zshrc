@@ -62,7 +62,28 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='ls --color'
+#eza
+unalias ls 2>/dev/null
+unalias ll 2>/dev/null
+unalias l 2>/dev/null
+unalias lt 2>/dev/null
+
+ls() {
+  eza --icons --group-directories-first "$@"
+}
+
+l() {
+  eza --icons --group-directories-first "$@"
+}
+
+ll() {
+  eza -lah --icons --group-directories-first --git "$@"
+}
+
+lt() {
+  eza --tree --level=2 --icons "$@"
+}
+
 alias vim='nvim'
 alias c='clear'
 
