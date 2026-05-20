@@ -5,6 +5,8 @@ vim.pack.add({
     {src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" },
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/mason-org/mason.nvim",
+    "https://github.com/nvim-lua/plenary.nvim",
+    "https://github.com/kdheepak/lazygit.nvim",
 })
 
 -- mini files ----
@@ -82,6 +84,13 @@ MiniSnippets.setup({
     },
 })
 MiniSnippets.start_lsp_server({ match = false })
+
+-- git gud --
+
+vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", {
+    silent = true,
+    desc = "Open LazyGit"
+})
 
 -- treesitter --
 
