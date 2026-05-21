@@ -29,3 +29,9 @@ vim.keymap.set("n", "<leader>u", function()
     vim.cmd.packadd("nvim.undotree")
     require("undotree").open()
 end, { desc = "Toggle Builtin Undotree" })
+
+-- tmux navigation
+vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "tmux left" })
+vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "tmux right" })
+vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "tmux down" })
+vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", { desc = "tmux up" })

@@ -7,6 +7,7 @@ vim.pack.add({
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/nvim-lua/plenary.nvim",
     "https://github.com/kdheepak/lazygit.nvim",
+    "https://github.com/christoomey/vim-tmux-navigator",
 })
 
 -- mini files ----
@@ -96,3 +97,6 @@ vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", {
 
 require("zero.lsp")
 require("zero.treesitter")
+
+--vim - navigator --
+
