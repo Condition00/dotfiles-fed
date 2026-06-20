@@ -19,8 +19,8 @@ vim.lsp.config("lua_ls", {
 vim.lsp.enable({
     "clangd",
     "lua_ls",
-    "marksman",
-    "gopls",
     "rust_analyzer",
-    "python-ls"
+    "basedpyright",
+    "ruff",
+    "marksman"
 })
