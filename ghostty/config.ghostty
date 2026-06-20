@@ -14,4 +14,5 @@ shell-integration-features = no-cursor
 
 theme = TokyoNight Night
 custom-shader = ~/.config/ghostty/shaders/cursor_smear.glsl
-custom-shader = ~/.config/ghostty/shaders/bloom025.glsl
+custom-shader = ~/.config/ghostty/shaders/bloom050.glsl
+custom-shader = ~/.config/ghostty/shaders/ripple_cursor.glsl
